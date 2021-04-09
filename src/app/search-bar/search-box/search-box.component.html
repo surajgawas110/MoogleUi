@@ -1,0 +1,17 @@
+<div class="box-outer">
+    <div class="search-outer">
+        <div class="btnDiv">
+            <img 
+            (click)="searchButtonClicked(moogleInput.value)"
+            src="../../../assets/images/search.jpeg"
+            height="30"
+        />
+        </div>
+        <input #moogleInput (keyup)="getListOfRecommendations(moogleInput)" class="editBar" type="text" placeholder="what do you want"/>
+    </div>
+    <div class="search-list" *ngIf="boolValuesPresent">
+        <div (click)="searchButtonClicked(item)" class="search-item" *ngFor="let item of matchedList">
+            <span [innerHTML]="item | changelist:moogleInput.value"></span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div *ngIf="boolShowNoResultFoundMessage">
+    <div class="error-box">
+        <h3>No Result found for the query</h3>
+        <p>No matches found for the word/sentence {{keyword}}</p>
+        <button (click)="goBackToSearchPage()">Go back to search page</button>
+    </div>
+</div>
+<div *ngIf="!boolShowNoResultFoundMessage">
+    <div class="pageNumberSty">
+        <h1>Page Number : {{pageNumber}}</h1>
+    </div>
+    <div class="outer-box">
+        <div *ngFor="let item of selectedItems;let i = index" class="item-box">
+            <div class="urlStyle">
+                <a (click)="goToTheLink(item.id)" class="underlineUrl">{{item.url}}</a>
+            </div>
+            <div class="heading">
+                <p>{{item.heading}}<p>
+            </div>
+            <div class="shortDescription">
+                <p>{{item.shortDescription}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span><span (click)="goToPreviousPage()" *ngIf="!boolFirstPage" class="previous">Prev</span> | {{pageNumber}} | <span (click)="goToNextPage()" *ngIf="!boolLastPage" class="next">Next</span></span>
+    </div> 
+</div>
+

@@ -1,0 +1,49 @@
+.p{
+    margin: 0 !important;
+    padding: 0px !important;
+}
+.outer-box{
+    margin-left: 10rem;
+    width: 40%;
+}
+.item-box{
+    margin: 3rem;
+}
+.urlStyle{
+    margin: 0px;
+    margin-left: 0px;
+}
+.underlineUrl{
+    margin: 0px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.heading{
+    margin: 0rem;
+    padding: 0rem;
+    margin-top: -1.2rem;
+    margin-left: 0px;
+    font-size: 2rem;
+}
+.shortDescription{
+    margin: 0rem;
+    padding: 0rem;
+    margin-top: -1.5rem;
+    margin-left: 0px;
+}
+.footer{
+    text-align: center;
+}
+.previous{
+    cursor: pointer;
+}
+.next{
+    cursor: pointer;
+}
+.pageNumberSty{
+    text-align: center;
+    cursor: pointer;
+}
+.error-box{
+    text-align: center;
+}
