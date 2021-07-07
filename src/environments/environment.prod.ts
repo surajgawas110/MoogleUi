@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiUrl:"http://moogle-backend-container:8080/"
+  apiUrl:"http://ec2-3-140-249-42.us-east-2.compute.amazonaws.com"
 };
